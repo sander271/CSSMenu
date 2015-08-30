@@ -1,0 +1,56 @@
+﻿body {
+    text-align: center;
+    background-color: black;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+
+a:hover{
+    background-color:rgba(6, 6, 6, 0.37) ;
+}
+
+.topMenu{
+    font-size: 30px;
+    background-color: gray;
+    color: white;
+    width: 750px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.topMenuItem{
+    padding: 5px;
+}
+
+.subMenu {
+    background-color: gray;
+    font-size: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition:visibility 0.5s,opacity 1s;
+    position: absolute;
+    padding: 5px;
+}
+
+.subMenuItem{
+    padding: 5px;
+}
+
+.subMenu li{
+    display: block;
+    padding: 5px;
+}
+
+ul li:hover .subMenu{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition:visibility 0.5s,opacity 1s;
+}
